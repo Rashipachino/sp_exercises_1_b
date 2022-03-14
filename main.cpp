@@ -20,7 +20,11 @@ int main() {
     char s1, s2;
     cin >> s1 >> s2;
     cout << "Here is your design:" << endl;
-    cout << mat(col, row, s1, s2) << endl;
-    
+    try{
+        cout << mat(col, row, s1, s2) << endl;
+    }
+    catch (exception& ex) {
+	 	cout << "   caught exception: " << ex.what() << endl;  // should print "Mat size is always odd"
+	}
     return 0;
 }
