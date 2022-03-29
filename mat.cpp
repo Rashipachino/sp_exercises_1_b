@@ -14,12 +14,6 @@ namespace ariel {
         }
         vector<vector<char>> arr(row, vector<char>(column, c));
 		string ans;
-		//initial fill out
-		// for (int i = 0; i < row; i++) {
-        //     for (int j = 0; j < column; j++) {
-        //         arr[i][j] = c;
-        //     }
-        // }
         //horizontal
         int k = 1;
         for (int i = 1; i <= row/2; i = i+2) {
